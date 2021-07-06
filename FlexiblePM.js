@@ -3,7 +3,7 @@
 // @namespace ''
 // @description Make the Property Manager UI more flexible
 // @match https://control.akamai.com/apps/property-manager/*
-// @version     1.0
+// @version     1.1
 // @author      Jaime Escalona
 // ==/UserScript==
 
@@ -45,3 +45,9 @@ addGlobalStyle ('.edit-page pm-match-list .matches .condition-separator > span {
   
 // Change the behavior box color
 addGlobalStyle ('.edit-page .no-behaviors, .edit-page pm-behavior { background-color: #d5ebf4; }');
+
+// Move Info box to the right side and re-color
+addGlobalStyle ('.popover { left: unset !important; right: 0 !important; background-color: rgb(189 255 197); }');
+addGlobalStyle ('.popover.left > .arrow:after { border-left-color: rgb(189 255 197); }')
+addGlobalStyle ('.popover.right > .arrow:after { border-right-color: rgb(189 255 197); }')
+addGlobalStyle ('h3.popover-title { color: rgb(102 102 102); }')
