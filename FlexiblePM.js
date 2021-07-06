@@ -50,4 +50,5 @@ addGlobalStyle ('.edit-page .no-behaviors, .edit-page pm-behavior { background-c
 addGlobalStyle ('.popover { left: unset !important; right: 0 !important; background-color: rgb(189 255 197); }');
 addGlobalStyle ('.popover.left > .arrow:after { border-left-color: rgb(189 255 197); }')
 addGlobalStyle ('.popover.right > .arrow:after { border-right-color: rgb(189 255 197); }')
+addGlobalStyle ('.popover.top > .arrow:after { border-top-color: rgb(189 255 197); }')
 addGlobalStyle ('h3.popover-title { color: rgb(102 102 102); }')
