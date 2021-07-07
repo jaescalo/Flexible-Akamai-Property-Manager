@@ -3,7 +3,7 @@
 // @namespace ''
 // @description Make the Property Manager UI more flexible
 // @match https://control.akamai.com/apps/property-manager/*
-// @version     1.1
+// @version     1.2
 // @author      Jaime Escalona
 // ==/UserScript==
 
@@ -32,8 +32,12 @@ addGlobalStyle('.container { width: 85% !important; }');
 // Adjust the variable list box to fit all variables
 addGlobalStyle('pm-variable-list .variable-table-scrolling-wrapper { max-height: 500px !important; }');
 
-// Set the rule tree height 
+// Set the rule tree height and width
 //addGlobalStyle ('.rule-tree .scroll { height: 100%; overflow-y: visible; overflow-x: visible; }');
+addGlobalStyle ('.col-xs-3 { width: 35%; }');
+
+// Set the matches and behaviors panel width
+addGlobalStyle ('.col-xs-9 { width: 65%; }');
 
 // Set the rules box height and scroll
 addGlobalStyle ('.rules { height:1500px; overflow-y:auto; }');
@@ -42,7 +46,7 @@ addGlobalStyle ('.rules { height:1500px; overflow-y:auto; }');
 addGlobalStyle ('.edit-page pm-match-list .matches.all, .edit-page pm-match-list .matches.any .pm-match { background-color: #f7ebe2; }');
 addGlobalStyle ('.edit-page .no-matches, .edit-page .pm-match { background-color: #f7ebe2 }');
 addGlobalStyle ('.edit-page pm-match-list .matches .condition-separator > span { background: #f7ebe2 }');
-  
+
 // Change the behavior box color
 addGlobalStyle ('.edit-page .no-behaviors, .edit-page pm-behavior { background-color: #d5ebf4; }');
 
@@ -52,3 +56,11 @@ addGlobalStyle ('.popover.left > .arrow:after { border-left-color: rgb(189 255 1
 addGlobalStyle ('.popover.right > .arrow:after { border-right-color: rgb(189 255 197); }')
 addGlobalStyle ('.popover.top > .arrow:after { border-top-color: rgb(189 255 197); }')
 addGlobalStyle ('h3.popover-title { color: rgb(102 102 102); }')
+
+
+// Increase the allowed number of child rules to 10
+addGlobalStyle ('.rule-tree .list-group>.list-group-item[depth="7"] { padding-left: 105px; }');
+addGlobalStyle ('.rule-tree .list-group>.list-group-item[depth="8"] { padding-left: 120px; }');
+addGlobalStyle ('.rule-tree .list-group>.list-group-item[depth="9"] { padding-left: 135px; }');
+addGlobalStyle ('.rule-tree .list-group>.list-group-item[depth="10"] { padding-left: 150px; }');
+addGlobalStyle ('.rule-tree .list-group>.list-group-item[depth="11"] { padding-left: 165px; }');
