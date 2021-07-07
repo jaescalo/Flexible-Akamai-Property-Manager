@@ -3,7 +3,7 @@
 // @namespace ''
 // @description Make the Property Manager UI more flexible
 // @match https://control.akamai.com/apps/property-manager/*
-// @version     1.2
+// @version     1.1
 // @author      Jaime Escalona
 // ==/UserScript==
 
@@ -32,9 +32,10 @@ addGlobalStyle('.container { width: 85% !important; }');
 // Adjust the variable list box to fit all variables
 addGlobalStyle('pm-variable-list .variable-table-scrolling-wrapper { max-height: 500px !important; }');
 
-// Set the rule tree height and width
+// Set the rule tree height, width and color
 //addGlobalStyle ('.rule-tree .scroll { height: 100%; overflow-y: visible; overflow-x: visible; }');
 addGlobalStyle ('.col-xs-3 { width: 35%; }');
+addGlobalStyle ('.rule-tree .list-group>.list-group-item { background-color: rgb(254 255 245); }');
 
 // Set the matches and behaviors panel width
 addGlobalStyle ('.col-xs-9 { width: 65%; }');
@@ -56,7 +57,6 @@ addGlobalStyle ('.popover.left > .arrow:after { border-left-color: rgb(189 255 1
 addGlobalStyle ('.popover.right > .arrow:after { border-right-color: rgb(189 255 197); }')
 addGlobalStyle ('.popover.top > .arrow:after { border-top-color: rgb(189 255 197); }')
 addGlobalStyle ('h3.popover-title { color: rgb(102 102 102); }')
-
 
 // Increase the allowed number of child rules to 10
 addGlobalStyle ('.rule-tree .list-group>.list-group-item[depth="7"] { padding-left: 105px; }');
